@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_isinset.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sungwopa <sungwopa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/03 16:05:29 by sungwopa          #+#    #+#             */
-/*   Updated: 2021/07/05 21:54:39 by sungwopa         ###   ########.fr       */
+/*   Created: 2021/07/05 14:38:08 by sungwopa          #+#    #+#             */
+/*   Updated: 2021/07/05 21:45:10 by sungwopa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+int	ft_isinset(char ch, const char *set)
 {
-	size_t	len;
+	size_t	idx;
 
-	len = ft_strlen(s);
-	write(fd, s, len);
+	idx = 0;
+	while (set[idx] != '\0')
+	{
+		if (set[idx] == ch)
+			return (1);
+		idx++;
+	}
+	return (0);
 }

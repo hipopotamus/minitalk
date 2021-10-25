@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_sizet_min.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sungwopa <sungwopa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/03 16:05:29 by sungwopa          #+#    #+#             */
-/*   Updated: 2021/07/05 21:54:39 by sungwopa         ###   ########.fr       */
+/*   Created: 2021/07/05 14:39:34 by sungwopa          #+#    #+#             */
+/*   Updated: 2021/07/05 21:56:40 by sungwopa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+size_t	ft_sizet_min(size_t x, size_t y)
 {
-	size_t	len;
-
-	len = ft_strlen(s);
-	write(fd, s, len);
+	if (x < y)
+		return (x);
+	else
+		return (y);
 }
