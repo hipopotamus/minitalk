@@ -6,7 +6,7 @@
 /*   By: sungwopa <sungwopa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 23:24:16 by sungwopa          #+#    #+#             */
-/*   Updated: 2021/10/26 07:25:08 by sungwopa         ###   ########.fr       */
+/*   Updated: 2021/10/26 07:53:09 by sungwopa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	main(int ac, char **av)
 
 	if (ac == 3)
 	{
-		pid = atoi(av[1]);
+		pid = ft_atoi(av[1]);
 		send_bit(pid, av[2], ft_strlen(av[2]));
 	}
 	else
