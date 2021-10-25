@@ -6,7 +6,7 @@
 /*   By: sungwopa <sungwopa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 23:24:16 by sungwopa          #+#    #+#             */
-/*   Updated: 2021/10/25 23:24:20 by sungwopa         ###   ########.fr       */
+/*   Updated: 2021/10/26 00:00:36 by sungwopa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,6 @@ int	main(int ac, char **av)
 		send_bit_by_bit(pid, av[2], ft_strlen(av[2]));
 	}
 	else
-		ft_putstr("usage: client server_pid msg_to_send\n");
+		ft_putstr_fd("usage: client server_pid msg_to_send\n", 1);
 	return (0);
 }
