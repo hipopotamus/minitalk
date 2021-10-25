@@ -6,7 +6,7 @@
 /*   By: sungwopa <sungwopa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 23:59:24 by sungwopa          #+#    #+#             */
-/*   Updated: 2021/10/26 00:00:05 by sungwopa         ###   ########.fr       */
+/*   Updated: 2021/10/26 07:25:54 by sungwopa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <signal.h>
 # include "./libft/libft.h"
 
-typedef struct	s_msg
+typedef struct s_msg
 {
 	char	c;
 	size_t	size;
