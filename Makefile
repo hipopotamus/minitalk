@@ -14,9 +14,13 @@ TARGET1 = server
 
 TARGET2 = client
 
-all :
+all : $(TARGET1) $(TARGET2)
+
+$(TARGET1) :
 		make -C libft
 		gcc -Wall -Wextra -Werror server.c libft/libft.a -o $(TARGET1)
+
+$(TARGET2) :		
 		gcc -Wall -Wextra -Werror client.c libft/libft.a -o $(TARGET2)
 
 clean :
