@@ -6,7 +6,7 @@
 #    By: sungwopa <sungwopa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 23:34:39 by sungwopa          #+#    #+#              #
-#    Updated: 2021/10/26 07:05:46 by sungwopa         ###   ########.fr        #
+#    Updated: 2021/10/28 16:14:16 by sungwopa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,8 +19,8 @@ all : $(TARGET1) $(TARGET2)
 $(TARGET1) :
 		make -C libft
 		gcc -Wall -Wextra -Werror server.c libft/libft.a -o $(TARGET1)
-
-$(TARGET2) :		
+		
+$(TARGET2) :
 		gcc -Wall -Wextra -Werror client.c libft/libft.a -o $(TARGET2)
 
 clean :
